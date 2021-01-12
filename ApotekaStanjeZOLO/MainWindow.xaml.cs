@@ -29,7 +29,7 @@ namespace ApotekaStanjeZOLO
         private void ucitajStanjeBtn_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialog openFile = new OpenFileDialog();
-            openFile.Filter= "Excel documents (.xlsx)|*.xlsx";
+            openFile.Filter = "Excel documents (.xlsx)|*.xlsx";
 
             Nullable<bool> result = openFile.ShowDialog();
 
