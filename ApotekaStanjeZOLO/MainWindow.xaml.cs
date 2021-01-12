@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,22 @@ namespace ApotekaStanjeZOLO
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void ucitajStanjeBtn_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFile = new OpenFileDialog();
+            openFile.Filter= "Excel documents (.xlsx)|*.xlsx";
+
+            Nullable<bool> result = openFile.ShowDialog();
+
+            
+            if (result == true)
+            {
+                
+                string filename = openFile.FileName;
+            }
+
         }
     }
 }

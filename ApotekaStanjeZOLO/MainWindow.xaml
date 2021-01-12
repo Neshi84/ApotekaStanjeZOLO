@@ -7,6 +7,35 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="20" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="20" />
+        </Grid.RowDefinitions>
 
+        <Button x:Name="ucitajStanjeBtn"
+                Grid.Column="1"
+                Grid.Row="1"
+                MinHeight="30"
+                MinWidth="150"
+                Margin="0 0 10 10" 
+                Content="Učitaj tabelu sa stanjem"
+                Click="ucitajStanjeBtn_Click" />
+        <Button x:Name="sacuvajTabelu"
+                Grid.Column="2"
+                Grid.Row="1"
+                MinHeight="30"
+                MinWidth="150"
+                Margin="0 0 10 10"
+                Content="Kreiraj tabelu za portal" />
     </Grid>
 </Window>
